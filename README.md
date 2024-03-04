@@ -8,7 +8,7 @@ Flatiron School Data Science Project - Phase 5
 
  
 # Presentation
-Presentation: [](https://docs.google.com/presentation/d/1AiqCMS01KniJ_c9b4oOcS4zDexuqxy_VaA3dzG9Akag/edit#slide=id.p)
+Presentation: [Link](https://docs.google.com/presentation/d/1AiqCMS01KniJ_c9b4oOcS4zDexuqxy_VaA3dzG9Akag/edit#slide=id.p)
 
 # Repository Navigation
 This Github Repository contains 1  main folder named Notebooks. The other images folder just contains images for this document. The Notebooks folder has 2  notebooks in it. The first of these notebooks is titled Rice_Yield_EDA_Preproccessing and contains all of my data cleaning and preprocessing steps. It is important to run this notebook first as cleaned data files are created which the Modeling notebook then calls. The next notebook is titled Modeling and contains all of the modeling steped as well as evaluation for each model.
