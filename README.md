@@ -1,36 +1,36 @@
-# DS-Project-4
-Flatiron School Data Science Project - Phase 4
+# DS-Capstone
+Flatiron School Data Science Project - Phase 5
 
 ## Overview
-* Purpose: Create a Classifier to determine plant disease
-* Source of data: TensorFlow Dataset 'plant_village'
-* Data: ~50,000 images, 38 classes divided into 14 crop species and 26 diseases
+* Purpose: Create a ML model to predict Indian Rice Yield Prediction on novel features
+* Source of data: Kaggle [Data](https://www.kaggle.com/datasets/sudhanshu2198/crop-yield-prediction-hachathon/data?select=Train.csv) 
+* Data: Rice yields from ~4000 farms (44 features)
 
  
-# Presentation and Sources
-Presentation: [Link](https://docs.google.com/presentation/d/1MNKhGSry9dcw3o19hOz2Eds7e--Gmn6QKhyBu8HuOcw/edit#slide=id.g9f3cfcb535_0_188)
-
-Images dataset: [Link](https://data.mendeley.com/datasets/tywbtsjrjv/1)
+# Presentation
+Presentation: [](https://docs.google.com/presentation/d/1AiqCMS01KniJ_c9b4oOcS4zDexuqxy_VaA3dzG9Akag/edit#slide=id.p)
 
 # Repository Navigation
-Our Github Repository contains 1  main folder named Notebooks. The other images folder just contains images for this document. The Notebooks folder has 2  notebooks in it. The first of these notebooks is titled Data_Preproccessing and contains all of my data cleaning and preprocessing steps. It is important to run this notebook first as cleaned data files are created which the Modeling notebook then calls. The next notebook is titled Modeling_Analysis and contains all of the models we created as well as evaluation for each model as well.
+This Github Repository contains 1  main folder named Notebooks. The other images folder just contains images for this document. The Notebooks folder has 2  notebooks in it. The first of these notebooks is titled Rice_Yield_EDA_Preproccessing and contains all of my data cleaning and preprocessing steps. It is important to run this notebook first as cleaned data files are created which the Modeling notebook then calls. The next notebook is titled Modeling and contains all of the modeling steped as well as evaluation for each model.
 
 ## Data Analysis & Recommendations
-* Able to get ~97% test accuracy using a 4 block Convolutional Neural Network
-<img src = '/images/model_CM.png'>
+<img width="927" alt="Screenshot 2024-03-04 at 9 38 32 AM" src="https://github.com/ColbyGates3/Phase_5_Project/assets/146360524/9e7e3ca0-610e-48fe-834f-4e4db7cb4dc1">
 
-<img src = '/images/metrics.png'>
 
-* VGG model transfer learning model with batch normalization slightly worse
-<img src = '/images/transfer_batch_cnn.png'>
+<img width="792" alt="Screenshot 2024-03-04 at 9 33 26 AM" src="https://github.com/ColbyGates3/Phase_5_Project/assets/146360524/b6e79dca-1374-42e7-b92d-b07ec8b94bcd">
 
+<img width="1243" alt="Screenshot 2024-03-02 at 2 59 20 PM" src="https://github.com/ColbyGates3/Phase_5_Project/assets/146360524/a16f46db-36d5-4e79-8b82-c1948fc87563">
+
+
+
+* Best Model was a CatBoost Model with a MAE of 179 Yield/Acre
 
 
 
 Our recommendations are the following:
-* Using CNNs to identify plant disease is a viable option
-* Features extracted from general images in the vgg model were applicable to this problem
-
+* For Accuracy use a CatBoost model
+* Most important features to consider are length of residue, crop tillage depth and hours of irrigation
+* inherently challening problem. May be hard to get more accurate with novel data
 
 
 
